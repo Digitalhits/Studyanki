@@ -1,0 +1,21 @@
+STUDY — PUBLICAR SEM EXPOR FLASHCARDS
+
+1. Descompacte o ZIP no Windows.
+2. Em github.com, entre na conta e clique + > New repository.
+3. Nome: study-flashcards; visibilidade: Public; Create repository.
+4. Clique em uploading an existing file (ou Add file > Upload files).
+5. Arraste TODOS os arquivos da pasta descompactada de dentro desta pasta.
+   IMPORTANTE: index.html precisa ficar na RAIZ do repositório, não dentro de outra pasta.
+6. Clique Commit changes.
+7. Settings > Pages > Build and deployment > Deploy from a branch > main > /(root) > Save.
+8. Aguarde a publicação. O link aparece na página Pages: https://USUARIO.github.io/study-flashcards/
+9. No Safari do iPhone, abra o link, toque Compartilhar > Adicionar à Tela de Início.
+10. Abra pelo ícone Study, crie uma senha local e importe seus .apkg na aba Ajustes ou Início.
+11. Faça backup criptografado regularmente e salve fora do telefone.
+
+ATENÇÃO: A versão pública contém somente código e ícones — NÃO contém cartões, senhas ou chaves.
+Os seus cartões ficam criptografados no armazenamento LOCAL de cada instalação do navegador.
+Cada navegador / instalação PWA tem dados próprios; faça a importação a partir do ícone do Study.
+Sem conta de usuário na nuvem e sem sincronização entre aparelhos.
+Em primeiro uso de .apkg, precisa de internet para carregar SQLite e eventualmente zstd.
+Os algoritmos de agendamento são simplificados; não são o FSRS do Anki.
