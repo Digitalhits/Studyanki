@@ -1,4 +1,4 @@
-const CACHE='study-public-v1';
+const CACHE='study-public-v2';
 const LOCAL=['./','./index.html','./style.css','./app.js','./vault.js','./anki.js','./merge.js','./jszip.min.js','./icon-192.png','./icon-512.png','./manifest.webmanifest'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(LOCAL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
